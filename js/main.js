@@ -11,7 +11,6 @@ $(".youtube").on("click", function () {
 })
 
 $.getJSON("https://conripi.github.io/Caiman/material/update.json", function (data) {
-    console.log(data)
     for (let i = 0; i < data.length; i++) {
         let item = data[i];
         $(".update").append("<div class='update_child'>");
